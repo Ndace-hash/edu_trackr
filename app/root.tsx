@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { Sidebar } from "./components/Sidebar";
 
 export const links: Route.LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -34,7 +35,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<div className="min-h-screen w-full bg-gradient-to-b from-[#D4F0FF] to-[#D9FBE6]">
-					{children}
+					<div className="flex">
+						<Sidebar />
+						{children}
+					</div>
 				</div>
 				<ScrollRestoration />
 				<Scripts />
