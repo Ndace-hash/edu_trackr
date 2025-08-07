@@ -35,10 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<div className="min-h-screen w-full bg-gradient-to-b from-[#D4F0FF] to-[#D9FBE6]">
-					<div className="flex">
-						<Sidebar />
-						{children}
-					</div>
+					{children}
 				</div>
 				<ScrollRestoration />
 				<Scripts />
