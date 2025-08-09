@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "~/components/Table";
+} from "~/components/ui/table";
 
 // Mock Records
 const records = [
